@@ -1,0 +1,166 @@
+CSIL Assignment
+Disuqi Hijazi 
+TASK 1
+
+ 1.1)
+mkdir -p test1/My\ files/Programming/Lecture\ notes 
+mkdir -p test1/CSIL/tests
+tree test1 >> Assignment
+
+test1
+├── CSIL
+│   └── tests
+└── My files
+    └── Programming
+        └── Lecture notes
+
+5 directories, 0 files
+
+1.2)
+vi test1/CSIL/tests/vi.txt
+i Disuqi Hijazi Esc :wq 
+nano test1/My\ files/Programming/nano.txt
+Computer Science ^X Y Enter
+cat test1/CSIL/tests/vi.txt test1/My\ files/Programming/nano.txt >> Assignment.txt 
+
+Disuqi Hijazi
+Computer Science
+
+1.3)
+mv /home/disuqi(username)/test1/CSIL/tests/vi.txt /home/disuqi/test1/My\ files/Programming/Lecture\ notes/
+cd test1/CSIL/
+cp ../My\ files/Programming/nano.txt tests
+cd ../My\ files/Programming/Lecture\ notes
+mv ../../Programming ../../Programming\ One
+tree test1 >> Assignment
+history | tail -n 15 >> Assignment
+
+test1
+├── CSIL
+│   └── tests
+│       └── nano.txt
+└── My files
+    └── Programming One
+        ├── Lecture notes
+        │   └── vi.txt
+        └── nano.txt
+
+5 directories, 3 files
+
+
+TASK 2
+2.1) grep -E 'Han' f1.txt
+	134 [Germany] Hans_Joachim_Stuck                   74  0
+	142 [United_States] Sam_Hanks                      9   1
+	193 [Germany] Hans_Herrmann                        18  0
+
+2.2) grep -E 'S[^aeiou]{2}' f1.txt
+	6   [Germany] Michael_Schumacher                   307 91
+	29  [Germany] Ralf_Schumacher                      180 6
+	41  [South_Africa] Jody_Scheckter                  112 10
+	73  [Canada] Lance_Stroll                          75  0
+	125 [United_States] Harry_Schell                   63  0
+	189 [France] Philippe_Streiff                      54  0
+	
+2.3) grep -E '([5-9][0-9]|[1-9][0-9]{2})$' f1.txt
+	1   [United_Kingdom] Lewis_Hamilton                264 94
+	2   [Germany] Sebastian_Vettel                     254 53
+	6   [Germany] Michael_Schumacher                   307 91
+	13  [France] Alain_Prost                           199 51
+	68  [Italy] Alberto_Ascari                         36  132
+
+2.4) grep -E ' [A-Z][a-z]{2}[_]' f1.txt
+	11  [Netherlands] Max_Verstappen                   116 9
+	37  [United_Kingdom] Jim_Clark                     72  25
+	69  [United_States] Dan_Gurney                     86  4
+	130 [United_States] Jim_Rathmann                   12  1
+	139 [Italy] Teo_Fabi                               63  0
+	142 [United_States] Sam_Hanks                      9   1
+	147 [United_Kingdom] Tom_Pryce                     42  0
+	148 [United_Kingdom] Roy_Salvadori                 48  0
+	160 [Netherlands] Jos_Verstappen                   106 0
+	200 [United_States] Lee_Wallard                    2   1	
+	
+2.5) grep -E '[aeiou]{2}\]' f1.txt
+	10  [Australia] Daniel_Ricciardo                   185 7
+	12  [Australia] Mark_Webber                        215 9
+	21  [Austria] Niki_Lauda                           173 25
+	25  [Austria] Gerhard_Berger                       210 10
+	31  [Colombia] Juan_Pablo_Montoya                  94  7
+	39  [Australia] Jack_Brabham                       127 14
+	48  [Australia] Alan_Jones                         116 12
+	79  [Austria] Jochen_Rindt                         60  6
+	115 [Austria] Alexander_Wurz                       69  0
+	170 [Austria] Karl_Wendlinger                      41  0
+	171 [Austria] Christian_Klien                      49  0
+
+2.6) grep -E '[3-9][0-9]{2} [0-9]' f1.txt
+	3   [Spain] Fernando_Alonso                        311 32
+	4   [Finland] Kimi_Raikkonen                       326 21
+	6   [Germany] Michael_Schumacher                   307 91
+	8   [United_Kingdom] Jenson_Button                 306 15
+	15  [Brazil] Rubens_Barrichello                    322 11
+
+2.7) grep -Eo '\[.*_.*\]' f1.txt | sort | uniq -c | sort -n
+      	2   [Russian_Federation]
+      	2   [South_Africa]
+      	4   [New_Zealand]
+   	17  [United_States]
+    	37  [United_Kingdom]
+    	
+2.8) grep -E '\] [A-Za-z_-]{20,}' f1.txt
+	36  [Italy] Giancarlo_Fisichella                   230 3
+	62  [Germany] Heinz-Harald_Frentzen                157 3
+	91  [Argentina] Jose_Froilan_Gonzalez              29  2
+	92  [France] Jean-Pierre_Beltoise                  85  1
+	141 [France] Jean-Pierre_Jabouille                 49  2
+	182 [Brazil] Christian_Fittipaldi                  40  0
+
+2.9) grep -Eo '[A-Z][a-z]+ ' f1.txt | sort | uniq -c | sort -n | tail -n 1
+	3 Hill
+	
+2.10) grep -Eo '\[.*\]' f1.txt | sort | uniq -c | sort -n | tail -n 3
+	23  [France]
+     	27  [Italy]
+     	37  [United_Kingdom]
+
+TASK 3
+3.1) cat f1.txt | sed -r 's/_/ /g' f1.txt | head -n 5
+	Rank Country         Driver                      Races Wins
+	1   [United Kingdom] Lewis Hamilton                264 94
+	2   [Germany] Sebastian Vettel                     254 53
+	3   [Spain] Fernando Alonso                        311 32
+	4   [Finland] Kimi Raikkonen                       326 21
+
+3.2) cat f1.txt | sed -r '/\[[A-M]/  d' | head -n 5
+	Rank Country         Driver                      Races Wins
+	1   [United_Kingdom] Lewis_Hamilton                264 94
+	3   [Spain] Fernando_Alonso                        311 32
+	8   [United_Kingdom] Jenson_Button                 306 15
+	11  [Netherlands] Max_Verstappen                   116 9
+
+3.3) cat f1.txt | sed -r '/\[United/ s/ [A-Za-z_-]+ /\U&/' | head -n 5
+	Rank Country         Driver                      Races Wins
+	1   [United_Kingdom] LEWIS_HAMILTON                264 94
+	2   [Germany] Sebastian_Vettel                     254 53
+	3   [Spain] Fernando_Alonso                        311 32
+	4   [Finland] Kimi_Raikkonen                       326 21
+
+3.4) cat f1.txt | sed -r '/\] [LS]/ aWINNER' | head -n 5
+	Rank Country         Driver                      Races Wins
+	1   [United_Kingdom] Lewis_Hamilton                264 94
+	WINNER
+	2   [Germany] Sebastian_Vettel                     254 53
+	WINNER
+
+3.5) cat f1.txt | sed -r 's/\] [A-Za-z_-]+/\]/' | head -n 5
+	Rank Country         Driver                      Races Wins
+	1   [United_Kingdom]                264 94
+	2   [Germany]                     254 53
+	3   [Spain]                        311 32
+	4   [Finland]                       326 21
+
+
+
+
+
