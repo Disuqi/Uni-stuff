@@ -1,0 +1,16 @@
+﻿<Page x:Class="HCI_Assignment.QRscanner"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCI_Assignment"
+      mc:Ignorable="d"
+      Title="QRscanner" Width="1280" Height="1024" 
+      Loaded="Page_Loaded">
+
+    <Grid x:Name="grid" Background="White">
+        <Label x:Name="label" Content="Show me your QR code!" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Image x:Name="image" Margin="235,138,235,188" Width="800" Height="700"/>
+
+    </Grid>
+</Page>

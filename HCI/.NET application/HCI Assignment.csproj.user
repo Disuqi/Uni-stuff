@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="appointment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AutoUnlock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DateOfBirth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EndPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="KeyBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MoveAppointment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NHSnum.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NumPad.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QRscanner.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="appointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AutoUnlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DateOfBirth.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EndPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="KeyBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MoveAppointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NamePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NHSnum.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NumPad.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="QRscanner.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

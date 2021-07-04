@@ -1,0 +1,30 @@
+﻿<Window x:Class="HCI_Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_Assignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1024" Width="1280" Closing="Window_Closing">
+    <Grid>
+        <Label x:Name="title1" Content="Identification" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.618" Height="100" Width="300" FontSize="48" FontFamily="Roboto" FontWeight="Bold" FontStyle="Normal" FlowDirection="LeftToRight" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,134,0,0"/>
+        <Label x:Name="label1" Content="Select the preferred identification method" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,250,0,0" Height="60" Width="676"/>
+        <Button x:Name="helpButton" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Width="30" Height="30" FontFamily="Roboto" FontWeight="Bold" Foreground="#FFFF2E00" Background="#FF9FFFCB" Click="helpButton_Click" BorderBrush="{x:Null}" Margin="750,0,0,435"/>
+        <Button x:Name="dateOfBirthButton" Content="Date of birth" HorizontalAlignment="Center" VerticalAlignment="Center" Height="122" Width="244" Margin="0,0,300,0" FontSize="36" FontFamily="Roboto" FontWeight="Bold" Click="dateOfBirthButton_Click"/>
+        <Button x:Name="NHSNumberButton" Content="NHS number" HorizontalAlignment="Center" VerticalAlignment="Center" Height="122" Width="244" FontSize="36" FontFamily="Roboto" FontWeight="Bold" Margin="300,0,0,0" Click="NHSNumberButton_Click"/>
+        <Button x:Name="QRCodeButton" Content="QR code" HorizontalAlignment="Center" VerticalAlignment="Center" Height="122" Width="244" FontSize="36" FontFamily="Roboto" FontWeight="Bold" Margin="900,0,0,0" Click="QRScanner_Click"/>
+        <Button x:Name="nameButton" Content="Name" HorizontalAlignment="Center" VerticalAlignment="Center" Height="122" Width="244" FontSize="36" FontFamily="Roboto" FontWeight="Bold" Click="nameButton_Click" Margin="0,0,900,0"/>
+        <Label x:Name="helpLabel" Content="Not sure what to do? Press on the question mark!" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Width="550" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black"/>
+        <TextBlock x:Name="helpBlock" HorizontalAlignment="Center" Text="Please press one of the four buttons above. Press on the preferred method you would like to use to identify yourself. The options available are Name, Date of birth, NHS number and QR code. After selecting an option a new page will show up where you will need to type the information selected (for example if you select name you will need to type your first and last name)." TextWrapping="Wrap" VerticalAlignment="Center" Width="550" Height="185" Margin="0,450,0,0" Background="#FF9FFFCB" FontSize="22" FontFamily="Roboto" Visibility="Hidden"/>
+        <Frame x:Name="frame" Content="Frame" Panel.ZIndex="1" Width="0" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="Red" Foreground="#FFDCFF00" Width="50" Height="50" Panel.ZIndex="2" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="backButton_Click" Visibility="Hidden"/>
+        <Label x:Name="differentLabel" Content="Please select a different identification method" HorizontalAlignment="Center" Margin="0,372,0,0" VerticalAlignment="Top" FontSize="24" Visibility="Hidden"/>
+        <Button x:Name="language" Content="" Click="language_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Height="97" Width="168">
+            <Button.Background>
+                <ImageBrush ImageSource="/Flag-Wales.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Newid Iaith -&gt;" Margin="873,24,168,911" FontSize="24" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

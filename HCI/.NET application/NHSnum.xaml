@@ -1,0 +1,18 @@
+﻿<Page x:Class="HCI_Assignment.NHSnum"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCI_Assignment"
+      mc:Ignorable="d"
+      Title="NHSnum" Height="1024" Width="1280">
+
+    <Grid Background="White" Width="1280" Height="1024">
+        <Label x:Name="label" Content="Enter your NHS number" FontSize="36" Margin="72,139,808,821" Width="400"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="477,139,0,0" Text="Touch Here" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="50" FontSize="36" Foreground="#FFAAAAAA" GotFocus="textBox_GotFocus"/>
+        <Frame x:Name="frame" Content="" Margin="290,224,290,100" Width="700" Height="700" NavigationUIVisibility="Hidden" FontSize="36"/>
+        <Button x:Name="button" Content="Finished" HorizontalAlignment="Left" Margin="882,139,0,0" VerticalAlignment="Top" Height="50" Width="200" FontSize="36" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" Text="We could not find anyone with that NHS number. Please check your NHS number and try again or try a different identification method" TextWrapping="Wrap" FontSize="48" Foreground="Red" Margin="290,224,290,100" Width="700" Visibility="Hidden"/>
+
+    </Grid>
+</Page>
