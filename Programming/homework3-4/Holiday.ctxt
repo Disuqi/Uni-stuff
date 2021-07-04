@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Holiday
+comment1.params=newRefNumber\ newType\ newPrice
+comment1.target=Holiday(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=Holiday()
+comment3.params=newRefNumber
+comment3.target=void\ setRefNumber(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getRefNumber()
+comment5.params=newType
+comment5.target=void\ setType(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getType()
+comment7.params=newPrice
+comment7.target=void\ setPrice(int)
+comment8.params=
+comment8.target=int\ getPrice()
+numComments=9

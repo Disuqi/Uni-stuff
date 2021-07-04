@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=newSurname\ newManagerID
+comment0.target=Manager(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getSurname()
+comment2.params=newSurname
+comment2.target=void\ setSurname(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getManagerID()
+comment4.params=newManagerID
+comment4.target=void\ setManagerID(java.lang.String)
+numComments=5

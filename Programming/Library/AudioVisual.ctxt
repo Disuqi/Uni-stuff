@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=AudioVisual
+comment1.params=title\ itemCode\ cost\ timesBorrowed\ onLoan\ playingTime
+comment1.target=AudioVisual(java.lang.String,\ java.lang.String,\ int,\ int,\ boolean,\ int)
+comment2.params=
+comment2.target=AudioVisual()
+comment3.params=
+comment3.target=int\ getPlayingTime()
+comment4.params=playingTime
+comment4.target=void\ setPlayingTime(int)
+comment5.params=
+comment5.target=void\ printDetails()
+comment6.params=scanner
+comment6.target=void\ readData(java.util.Scanner)
+numComments=7

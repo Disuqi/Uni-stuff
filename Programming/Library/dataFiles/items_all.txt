@@ -1,0 +1,43 @@
+// this is a comment, any lines that start with //
+// (and blank lines) should be ignored
+
+[Book data]
+// data is author, isbn, noOfPages, publisher, title, itemCode, cost, timesBorrowed, onLoan
+Barnes and Kolling, 9780131976290,480, Pearson, Objects First with Java, LM002411,3989,781,true
+Aho Sethi and Ullman, 9780201101942,795, Addison-Wesley, Compilers: Principles Techniques and Tools, LM002711,599,500,FALSE
+Harvey Paul and Jeffrey, 9780130622211,1568, Prentice Hall, C# How to Program, LM002876,4599,45,TRUE
+Muster, 9780072193145,1011, McGraw-Hill, Unix Made Easy: The Basics and Beyond (Made Easy), LM002468,6395,678,TRUE
+Thomee, 9783540331216,370, Springer Verlag, Galerkin Finite Element Methods for Parabolic Problems, LM002153,4554,543,FALSE
+
+[periodical data]
+// data is publicationDate, noOfPages, publisher, title, itemCode, cost, timesBorrowed, onLoan
+25-03-20,70, News International, The Times, LM005447,80,250000,FALSE
+26-03-20,70, News International, The Times, LM005002,80,560562,false
+26-04-20, 70, Associated Newspapers, Daily Mail, LM005177,75,478908,false
+
+[CD data]
+
+// data is artist, noOfTracks, playingTime, title, itemCode, cost, timesBorrowed, onLoan
+
+James Blunt,15,68, Back to Bedlam, LM003604,498,234,true
+Duffy,10,73, Rockferry, LM003553,898,90,false
+Adele,12,19,75, LM003580,798,87,FALSE
+Robert Plant and Alison Krauss,13,72, Raising Sand, LM003750,898,89,tRUE
+Goldfrapp,10,72, Seventh Tree, LM003873,1299,9876,true
+Amy Winehouse,11,70, Back To Black, LM003698,698,8765,false
+Jack Johnson,15,67, Sleep Through The Static, LM003773,898,54,True 
+ Mark Ronson,14,74, Version, LM003365,698,56,true 
+Radiohead,10,75, In Rainbows , LM003771,798,6543,FALSE
+Nick Cave,11,68, Dig!!! Lazarus Dig!!!, LM003751,1199,90,False
+Nickelback,11,72, All the Right Reasons, LM003915,598,32,true
+
+[DVD data]
+
+// data is director, playingTime, title, itemCode, cost, timesBorrowed, onLoan
+Chris Miller,92, Shrek The Third, LM004314,1026,900,TRUE 
+Robert Zemeckis,114, Beowulf , LM004079,900,87,FALSE
+Phyllida Lloyd,118,  Mamma Mia, LM004984,798,566,true
+Joe Wright,130, Atonement, LM004720,1293,66,true
+Andrew Adamson,125, The Chronicles of Narnia: Prince Caspian, LM004178,345,45,FALSE
+
+

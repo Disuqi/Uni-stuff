@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=myBank
+comment1.params=
+comment1.target=myBank()
+comment2.params=account
+comment2.target=void\ addAccount(Account)
+comment3.params=
+comment3.target=void\ displayHolder()
+comment4.params=
+comment4.target=int\ getNumberOfAccounts()
+comment5.params=name
+comment5.target=Account\ getAccount(java.lang.String)
+comment6.params=yourAccount\ transferTo\ amount
+comment6.target=void\ transfer(Account,\ Account,\ float)
+numComments=7

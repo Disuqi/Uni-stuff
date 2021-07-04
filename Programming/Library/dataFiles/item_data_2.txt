@@ -1,0 +1,18 @@
+// this is a comment, any lines that start with //
+// (and blank lines) should be ignored
+
+
+[Book data]
+// data is author, isbn, noOfPages, publisher, title, itemCode, cost, timesBorrowed, onLoan
+Barnes and Kolling, 9780131976290,480, Pearson, Objects First with Java, LM002411,3989,781,true
+Aho Sethi and Ullman, 9780201101942,795, Addison-Wesley, Compilers: Principles Techniques and Tools, LM002711,599,0,FALSE
+Harvey Paul and Jeffrey, 9780130622211,1568, Prentice Hall, C# How to Program, LM002876,4599,45,TRUE
+Muster, 9780072193145,1011, McGraw-Hill, Unix Made Easy: The Basics and Beyond (Made Easy), LM002468,6395,0,TRUE
+Thomee, 9783540331216,370, Springer Verlag, Galerkin Finite Element Methods for Parabolic Problems, LM002153,4554,0,FALSE
+
+[periodical data]
+// data is publicationDate, noOfPages, publisher, title, itemCode, cost, timesBorrowed, onLoan
+25-03-20,70, News International, The Times, LM005447,80,250000,FALSE
+26-03-20,70, News International, The Times, LM005002,80,560562,false
+26-04-20, 70, Associated Newspapers, Daily Mail, LM005177,75,478908,false
+

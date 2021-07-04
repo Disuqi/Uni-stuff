@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=DVD
+comment1.params=title\ itemCode\ cost\ timesBorrowed\ onLoan\ playingTime\ director
+comment1.target=DVD(java.lang.String,\ java.lang.String,\ int,\ int,\ boolean,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=DVD()
+comment3.params=
+comment3.target=java.lang.String\ getDirector()
+comment4.params=director
+comment4.target=void\ setDirector(java.lang.String)
+comment5.params=
+comment5.target=void\ printDetails()
+comment6.params=scanner
+comment6.target=void\ readData(java.util.Scanner)
+numComments=7

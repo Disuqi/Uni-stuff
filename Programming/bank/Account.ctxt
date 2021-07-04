@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Account
+comment1.params=
+comment1.target=Account()
+comment10.params=transferTo\ howMuch
+comment10.target=void\ transfer(Account,\ float)
+comment11.params=howMuch
+comment11.target=void\ transferIn(float)
+comment12.params=
+comment12.target=void\ statement()
+comment2.params=newCustomer
+comment2.target=void\ setCustomer(Customer)
+comment3.params=
+comment3.target=Customer\ getCustomer()
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment5.params=y
+comment5.target=void\ depositMoney(float)
+comment6.params=
+comment6.target=float\ getBalance()
+comment7.params=f
+comment7.target=void\ withdraw(float)
+comment8.params=
+comment8.target=float\ getOverdraftlimit()
+comment9.params=newCharge
+comment9.target=void\ setOverdraftCharge(int)
+numComments=13
