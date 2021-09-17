@@ -12,4 +12,4 @@ This module is about the linux command line and Bash scripting.
 It will contain pdfs with some cmd commands and also scripts written in bash
 ### Progarmming
 This module is about Java.
-This folder will contain small projects and programs written in Java
+This folder will contain small projects and programs written in Java. I would reccomend looking at Libary (the biggest project/assignment)
